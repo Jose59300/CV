@@ -6,12 +6,12 @@ body, html, header {
   height: 100%;
   margin: 0;
 }
-nav {
-  background-image: url("../image/fond4.gif");
-}
 header {
-  background:url("../image/presta1.jpg") no-repeat center center;
-  position: relative;
+  background-image: url("../image/fond4.gif");
+  height: 550px;
+}
+nav{
+  background-image: url("../image/fond4.gif");
 }
 input {
   display: none;
@@ -19,48 +19,20 @@ input {
 h1{
   font-family: 'Lato', sans-serif;
   font-size: 60px;
-  padding: 55px 80px;
-  top: 50px;
+  top: 140px;
   color: #F9635E;
-  position: absolute;
-}
-h1 {
-    opacity:0;
-    -moz-animation: anim 2s linear forwards 1s;
-    -webkit-animation: anim 2s linear forwards 1s;
-    -o-animation: anim 2s linear forwards 1s;
-    -ms-animation: anim 2s linear forwards 1s;
-    animation: anim 2s linear forwards 1s;
-}
-@-moz-keyframes anim {
-   0%  {opacity:0;}
-   100% {opacity:1;}
-}
-@-webkit-keyframes anim {
-   0%  {opacity:0;}
-   100% {opacity:1;}
-}
-@-o-keyframes anim {
-   0%  {opacity:0;}
-   100% {opacity:1;}
-}
-@-ms-keyframes anim {
-   0%  {opacity:0;}
-   100% {opacity:1;}
-}
-@keyframes anim {
-   0%  {opacity:0;}
-   100% {opacity:1;}
+  text-align: center;
+  width: 100%;
 }
 span {
- font-family: 'Open Sans', sans-serif;
- font-size: 20px;
- color: #F9635E;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #F9635E;
 }
 h2 {
-  background-image: url("../image/fond4.gif");
+  background-color: #DCDFE0;
+  color: #F9635E;
   text-align: center;
-  color: white;
   padding: 60px 15px;
   text-transform: uppercase;
 }
@@ -75,12 +47,27 @@ img {
 p {
   font-family: 'helvetica neue', sans-serif;
 }
+.logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.logo a {
+  color: white;
+  padding: 0 30px;
+}
+.curriculum {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
 .menu {
-    z-index: 100;
-    width: 100%;
-    margin: 0 auto;
-    position: fixed;
-    top: 0px;
+  z-index: 100;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  top: 0px;
 }
 .menu a {
   display: inline;
@@ -93,26 +80,28 @@ p {
   float: left;
   text-align: center;
 }
-.logo {
-  float: left;
-  width: 30%;
-  margin: 45px;
-
-}
 .navbar {
-  float: right;
-  width: 60%;
   padding: 45px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contact {
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin: 35px auto;
 }
 .about {
-  float: left;
-  width: 50%;
+  width: 35%;
   text-align: center;
+  font-size: 1.4vw;
 }
 .text {
   font-size: 1.3vw;
-  float: left;
-  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   padding: 62px;
   box-sizing: border-box;
 }
@@ -125,6 +114,12 @@ p {
 }
 .text > a:hover {
   background-color: #F9635E;
+}
+.text p:first-child{
+  width: 35%;
+}
+.text p:last-child {
+  width: 40%;
 }
 
 .timeline {
@@ -230,14 +225,12 @@ p {
   box-shadow: 0 0 0 3px #FC7874;
 }
 .course {
-  background-image: url("../img/fond4.gif");
+  color: #F9635E;
   text-align: center;
-  color: white;
   padding: 80px 15px;
   font-size: 30px;
 }
 skills {
-  background-image: url("../img/fond4.gif");
   text-align: center;
   color: white;
   padding: 80px 15px;
@@ -285,10 +278,10 @@ img {
   transform:scale(1.2);
   transition:transform 0.2s;
   z-index:10;
-}.portoflio {
-  background-image: url("../img/fond4.gif");
+}
+.portoflio {
+  color: #F9635E;
   text-align: center;
-  color: white;
   padding: 80px 15px;
   font-size: 30px;
 }
@@ -308,8 +301,8 @@ img {
     display: flex;
     flex-flow: row wrap;
     -webkit-box-shadow: 0 10px 6px -6px #777;
-  	   -moz-box-shadow: 0 10px 6px -6px #777;
-  	        box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
   }
   nav label {
     color: white;
@@ -352,9 +345,9 @@ img {
   }
 
   /*h1{
-    text-align: center;
-    font-size: 40px;
-    padding: 0 20px;
+  text-align: center;
+  font-size: 40px;
+  padding: 0 20px;
   }*/
   .timeline:before {
     left: 20px;
@@ -452,11 +445,11 @@ img {
 }
 /*fin responsive laptop*/
 -  h3{
-    font-size: 5vw;
-  }
+  font-size: 5vw;
+}
 
-  .polygon:before{
-    width: 44vw;
-  }
+.polygon:before{
+  width: 44vw;
+}
 
 }

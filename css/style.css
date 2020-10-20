@@ -37,7 +37,8 @@ h2 {
   text-transform: uppercase;
 }
 section {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   background-color: #F0F3F4;
   width: 100%;
 }
@@ -61,7 +62,14 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  color: white;
+  text-decoration: none;
 }
+
+.curriculum:hover {
+  color: #F9635E;
+}
+
 .menu {
   z-index: 100;
   width: 100%;
@@ -83,8 +91,13 @@ p {
 .navbar {
   padding: 45px 0;
   display: flex;
+  position: sticky;
   justify-content: center;
   width: 100%;
+}
+
+.navbar li a:active {
+  color: #F9635E;
 }
 .contact {
   width: 100%;
@@ -93,9 +106,9 @@ p {
   margin: 35px auto;
 }
 .about {
-  width: 35%;
-  text-align: center;
+  width: 30%;
   font-size: 1.4vw;
+  margin: 30px auto;
 }
 .text {
   font-size: 1.3vw;

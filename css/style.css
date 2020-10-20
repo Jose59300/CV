@@ -2,20 +2,25 @@
   margin: 0;
   padding: 0;
 }
+
 body, html, header {
   height: 100%;
   margin: 0;
 }
+
 header {
   background-image: url("../image/fond4.gif");
   height: 550px;
 }
+
 nav{
   background-image: url("../image/fond4.gif");
 }
+
 input {
   display: none;
 }
+
 h1{
   font-family: 'Lato', sans-serif;
   font-size: 60px;
@@ -24,11 +29,13 @@ h1{
   text-align: center;
   width: 100%;
 }
+
 span {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   color: #F9635E;
 }
+
 h2 {
   background-color: #DCDFE0;
   color: #F9635E;
@@ -36,28 +43,34 @@ h2 {
   padding: 60px 15px;
   text-transform: uppercase;
 }
+
 section {
   display: flex;
   flex-direction: column;
   background-color: #F0F3F4;
   width: 100%;
 }
+
 img {
   width: 50%;
 }
+
 p {
   font-family: 'helvetica neue', sans-serif;
 }
+
 .logo{
   width: 100%;
   display: flex;
   justify-content: center;
   color: white;
 }
+
 .logo a {
   color: white;
   padding: 0 30px;
 }
+
 .curriculum {
   display: flex;
   justify-content: center;
@@ -73,10 +86,12 @@ p {
 .menu {
   z-index: 100;
   width: 100%;
+  position: sticky;
   margin: 0 auto;
   display: flex;
   top: 0px;
 }
+
 .menu a {
   display: inline;
   text-decoration: none;
@@ -84,32 +99,36 @@ p {
   border-bottom: 2px solid transparent;
   padding: 0px 30px;
 }
+
 .menu ul li {
   float: left;
   text-align: center;
 }
+
 .navbar {
   padding: 45px 0;
   display: flex;
-  position: sticky;
   justify-content: center;
   width: 100%;
 }
 
-.navbar li a:active {
+/*.navbar li a:active {
   color: #F9635E;
-}
+}*/
+
 .contact {
   width: 100%;
   color: white;
   text-align: center;
   margin: 35px auto;
 }
+
 .about {
   width: 30%;
   font-size: 1.4vw;
   margin: 30px auto;
 }
+
 .text {
   font-size: 1.3vw;
   display: flex;
@@ -118,6 +137,7 @@ p {
   padding: 62px;
   box-sizing: border-box;
 }
+
 .text > a {
   display: block;
   text-align: center;
@@ -125,12 +145,15 @@ p {
   color: black;
   font-size: 2.3vw;
 }
+
 .text > a:hover {
   background-color: #F9635E;
 }
+
 .text p:first-child{
   width: 35%;
 }
+
 .text p:last-child {
   width: 40%;
 }
@@ -142,6 +165,7 @@ p {
   width: 1000px;
   box-sizing: border-box;
 }
+
 .timeline:before {
   content: '';
   position: absolute;
@@ -150,10 +174,12 @@ p {
   height: 95%;
   background: black;
 }
+
 .timeline ul {
   margin: 0;
   padding: 0;
 }
+
 .timeline ul li {
   list-style: none;
   position: relative;
@@ -161,19 +187,23 @@ p {
   padding: 20px 40px;
   box-sizing: border-box;
 }
+
 .timeline ul li:nth-child(odd) {
   float: left;
   text-align: right;
   clear: both;
 }
+
 .timeline ul li:nth-child(even){
   float: right;
   text-align: left;
   clear: both;
 }
+
 .content {
   padding-bottom: 20px;
 }
+
 .timeline ul li:nth-child(odd):before {
   content: '';
   position: absolute;
@@ -185,6 +215,7 @@ p {
   border-radius: 50%;
   box-shadow: 0 0 0 3px #FC7874;
 }
+
 .timeline ul li:nth-child(even):before {
   content: '';
   position: absolute;
@@ -196,21 +227,25 @@ p {
   border-radius: 50%;
   box-shadow: 0 0 0 3px #FC7874;
 }
+
 .timeline ul li h3 {
   margin: 0;
   padding: 0;
   font-weight: 600;
   color: #F9635E;
 }
+
 .timeline ul li p {
   margin: 10px 0 0;
   padding: 0;
 }
+
 .timeline ul li .time h4 {
   margin: 0;
   padding: 0;
   font-size: 14px;
 }
+
 .timeline ul li:nth-child(odd) .time {
   position: absolute;
   top: 12px;
@@ -224,6 +259,7 @@ p {
   box-shadow: 0 0 0 3px #FC7874;
   text-align: center;
 }
+
 .timeline ul li:nth-child(even) .time {
   position: absolute;
   text-align: center;
@@ -237,21 +273,25 @@ p {
   border-radius: 18px;
   box-shadow: 0 0 0 3px #FC7874;
 }
+
 .course {
   color: #F9635E;
   text-align: center;
   padding: 80px 15px;
   font-size: 30px;
 }
+
 skills {
   text-align: center;
   color: white;
   padding: 80px 15px;
   font-size: 30px;
 }
+
 img {
   width: 50%;
 }
+
 .gallery {
   width: 50%;
   margin: auto;
@@ -260,6 +300,7 @@ img {
   flex-flow: row wrap;
   justify-content: center;
 }
+
 .polygon {
   -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
@@ -268,6 +309,7 @@ img {
   width: 250px;
   transition: transform 0.2s;
 }
+
 .polygon:before {
   content: '';
   position: absolute;
@@ -279,29 +321,35 @@ img {
   transform:rotate(45deg);
   transition:transform 0.5s;
 }
+
 .polygon:hover:before {
   transform: translate(-100px,400%) rotate(45deg);
   transition:transform 0.5s;
 }
+
 .clipped {
   margin: 62px;
   font-size: 2vw;
 }
+
 .polygon:hover {
   transform:scale(1.2);
   transition:transform 0.2s;
   z-index:10;
 }
+
 .portoflio {
   color: #F9635E;
   text-align: center;
   padding: 80px 15px;
   font-size: 30px;
 }
+
 .project {
   width: 30%;
   margin: 15px 60px 0;
 }
+
 .image {
   width: 100%;
 }
@@ -310,6 +358,7 @@ img {
   .menu ul{
     display: none;
   }
+
   .menu {
     display: flex;
     flex-flow: row wrap;
@@ -317,6 +366,7 @@ img {
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
   }
+
   nav label {
     color: white;
     display: block;
@@ -325,47 +375,50 @@ img {
     cursor: pointer;
     width: 50%;
   }
+
   nav input {
     display: none;
   }
+
   nav input[type="checkbox"]:checked ~ ul {
     display:flex;
     flex-flow: column wrap;
     width: 100%;
     padding: 11px;
   }
+
   .logo {
     display: flex;
     flex-direction: row-reverse;
     width: 50%;
   }
+
   .menu ul li {
     width: 100%;
     padding: 4px;
     margin: 0
   }
+
   p, h2 {
     font-size: 3vw;
   }
+
   #title-name {
     font-size: 10vw;
     color: #F9635E;
   }
+
   .timeline {
     width: 100%;
     padding-bottom: 0;
     top: 35px;
   }
 
-  /*h1{
-  text-align: center;
-  font-size: 40px;
-  padding: 0 20px;
-  }*/
   .timeline:before {
     left: 20px;
     top: -35px;
   }
+
   .timeline li:nth-child(odd),
   .timeline li:nth-child(even) {
     width: 100%;
@@ -373,27 +426,33 @@ img {
     padding-left: 50px;
     padding-bottom: 50px;
   }
+
   .timeline li:nth-child(odd):before,
   .timeline li:nth-child(even):before {
     top: -18px !important;
     left: 16px !important;
   }
+
   .timeline li:nth-child(odd) .time,
   .timeline li:nth-child(even) .time {
     top: -30px !important;
     left: 50px !important;
     right: inherit !important;
   }
+
   .polygon {
     height: 100px;
     width: 100px;
   }
+
   .clipped {
     margin: 25px;
   }
+
   .profil {
     width: 100%;
   }
+
   .text {
     width: 100%;
   }
@@ -405,27 +464,34 @@ img {
     width: 100%;
     box-sizing: border-box;
   }
+
   p, h2{
     font-size: 6vw;
   }
+
   .polygon{
     height: 79px;
     width: 79px;
   }
+
   .profil{
     width: 100%;
   }
+
   h3{
     font-size: 8vw;
   }
+
   .clipped{
     margin: 20px;
     font-size: 3vw;
   }
+
   .text{
     padding: 10px;
     font-size: 4vw;
   }
+
   .polygon:before{
     width: 50vw;
   }
@@ -436,22 +502,28 @@ img {
   .timeline{
     width: 100%;
   }
+
   .polygon{
     width: 150px;
     height: 150px
   }
+
   p{
     font-size: 2vw;
   }
+
   h3{
     font-size: 3vw;
   }
+
   .clipped{
     margin: 39px;
   }
+
   .text{
     padding: 25px;
   }
+
   .polygon:before{
     width: 36vw;
   }

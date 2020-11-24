@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+
 body, html, header {
   height: 100%;
   margin: 0;
@@ -24,7 +25,7 @@ input {
 h1{
   font-family: 'Lato', sans-serif;
   font-size: 60px;
-  top: 140px;
+  padding-top: 125px;
   color: #F9635E;
   text-align: center;
   width: 100%;
@@ -42,6 +43,17 @@ h2 {
   text-align: center;
   padding: 60px 15px;
   text-transform: uppercase;
+}
+
+button {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 40px;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
 }
 
 section {
@@ -74,9 +86,13 @@ p {
 .curriculum {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  color: white;
+  color: black;
   text-decoration: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
 }
 
 .curriculum:hover {
@@ -86,10 +102,14 @@ p {
 .menu {
   z-index: 100;
   width: 100%;
-  position: sticky;
+  position: fixed;
   margin: 0 auto;
   display: flex;
   top: 0px;
+}
+
+.menu_mobile {
+  display: none;
 }
 
 .menu a {
@@ -113,7 +133,7 @@ p {
 }
 
 /*.navbar li a:active {
-  color: #F9635E;
+color: #F9635E;
 }*/
 
 .contact {
@@ -355,49 +375,75 @@ img {
 }
 /*responsive*/
 @media screen and (max-width: 768px) {
-  .menu ul{
-    display: none;
+  h1 {
+    padding-top: 100px;
   }
 
   .menu {
-    display: flex;
-    flex-flow: row wrap;
+    display: none;
+  }
+
+  .menu_mobile {
+    display: block;
+    z-index: 10;
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
   }
 
-  nav label {
-    color: white;
-    display: block;
-    padding: 10px;
-    box-sizing: border-box;
-    cursor: pointer;
-    width: 50%;
+  .button_hamburger {
+    float: left;
+    width: 10%;
   }
 
-  nav input {
+  .navbar_mobile {
     display: none;
+    position: absolute;
+    width: 50%;
+    float: none;
+    text-align: center;
+    background-color: #f6f6f6;
+    top: 33px;
+    padding: 0 20px;
   }
 
-  nav input[type="checkbox"]:checked ~ ul {
-    display:flex;
-    flex-flow: column wrap;
-    width: 100%;
-    padding: 11px;
-  }
+  .navbar_mobile ul li {
+  float: none;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+
+}
+
+.navbar_mobile ul li a {
+  text-decoration: none;
+    color: black;
+}
+
+.navbar_mobile ul li {
+  list-style-type: none;
+}
+
+.navbar_mobile ul:hover {
+  display: block;
+}
+
+.button_hamburger img {
+  width: 100%;
+  padding: 10px;
+}
+
+.button_hamburger:hover .navbar_mobile {
+  display: block;
+  margin-top: 10px;
+}
+
 
   .logo {
     display: flex;
     flex-direction: row-reverse;
-    width: 50%;
   }
 
-  .menu ul li {
-    width: 100%;
-    padding: 4px;
-    margin: 0
-  }
 
   p, h2 {
     font-size: 3vw;
